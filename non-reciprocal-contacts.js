@@ -8,6 +8,7 @@
 // @include        http://*.flickr.com/people/*/contacts/by-*/
 // @include        http://*.flickr.com/people/*/contacts/by-*
 // @include        http://*.flickr.com/people/*/contacts/by-*/?page=*
+// @grant          none
 // ==/UserScript==
 //
 // Version 0.01 alpha
