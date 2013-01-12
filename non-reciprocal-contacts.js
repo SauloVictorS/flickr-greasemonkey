@@ -17,7 +17,7 @@
 // false positives. Please use it at your own risk, as there may be bugs.
 
 (function() {
-  var highlightColor = 'red';
+	var highlightColor = 'red';
 
 	var snapIcons = document.evaluate("//td[@class='contact-list-bicon']/a/img[@class='BuddyIconX']",
 		document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
