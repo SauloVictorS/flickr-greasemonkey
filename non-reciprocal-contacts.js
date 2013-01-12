@@ -16,15 +16,17 @@
 // false positives. Please use it at your own risk, as there may be bugs.
 
 (function() {
-	snapIcons = document.evaluate("//td[@class='contact-list-bicon']/a/img[@class='BuddyIconX']",
+  var highlightColor = 'red';
+
+	var snapIcons = document.evaluate("//td[@class='contact-list-bicon']/a/img[@class='BuddyIconX']",
 		document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
 	
-	if (snapIcons.snapshotLength == 0) {
+	if (snapIcons.snapshotLength === 0) {
 		snapIcons = document.evaluate("//td[@class='contact-list-bicon contact-list-sorted']/a/img[@class='BuddyIconX']",
 			document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
 	}
 		
-	if (snapIcons.snapshotLength == 0) {
+	if (snapIcons.snapshotLength === 0) {
 		return;
 	}
 		
@@ -38,11 +40,11 @@
 					if (success) {
 						var rsp = responseText.replace(/jsonFlickrApi\(/,'');
 						rsp = eval('('+rsp);
-						if (rsp.stat == 'ok') {
+						if (rsp.stat === 'ok') {
 							if (
-								rsp.person.revcontact == 0 &&
-								rsp.person.revfriend == 0 && 
-								rsp.person.revfamily == 0
+								rsp.person.revcontact === 0 &&
+								rsp.person.revfriend === 0 && 
+								rsp.person.revfamily === 0
 							) {
 								snapUnames = document.evaluate("//td[@class='contact-list-name']/a/text()",
 									document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
@@ -53,8 +55,8 @@
 								}
 								
 								for (j = 0; j < snapUnames.snapshotLength; j++) {
-									if (snapUnames.snapshotItem(j).nodeValue == rsp.person.username._content) {
-										snapUnames.snapshotItem(j).parentNode.style.color = 'red';
+									if (snapUnames.snapshotItem(j).nodeValue === rsp.person.username._content) {
+										snapUnames.snapshotItem(j).parentNode.style.color = highlightColor;
 									}
 								}
 							}
