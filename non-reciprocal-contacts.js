@@ -2,20 +2,27 @@
 // @name           Flickr Non-Reciprocal Contacts Finder
 // @namespace      http://www.flickr.com/photos/carve/
 // @description    Find out which of your Flickr contacts has not added you back.
-// @include        http://*.flickr.com/people/*/contacts/
-// @include        http://*.flickr.com/people/*/contacts
-// @include        http://*.flickr.com/people/*/contacts/?page=*
-// @include        http://*.flickr.com/people/*/contacts/by-*/
-// @include        http://*.flickr.com/people/*/contacts/by-*
-// @include        http://*.flickr.com/people/*/contacts/by-*/?page=*
-// @include        https://*.flickr.com/people/*/contacts/
-// @include        https://*.flickr.com/people/*/contacts
-// @include        https://*.flickr.com/people/*/contacts/?page=*
-// @include        https://*.flickr.com/people/*/contacts/by-*/
-// @include        https://*.flickr.com/people/*/contacts/by-*
-// @include        https://*.flickr.com/people/*/contacts/by-*/?page=*
-// @include        https://*.flickr.com/people/*/contacts/rev/?page=*
-// @include        https://*.flickr.com/people/*/contacts/rev/
+// @include        *.flickr.com/people/*/contacts/
+// @include        *.flickr.com/people/*/contacts
+// @include        *.flickr.com/people/*/contacts/?page=*
+// @include        *.flickr.com/people/*/contacts/by-*/
+// @include        *.flickr.com/people/*/contacts/by-*
+// @include        *.flickr.com/people/*/contacts/by-*/?page=*
+// @include        *.flickr.com/people/*/contacts/?page=*
+// @include        *.flickr.com/people/*/contacts/by-*/
+// @include        *.flickr.com/people/*/contacts/by-*
+// @include        *.flickr.com/people/*/contacts/by-*/?page=*
+// @include        *.flickr.com/people/*/contacts/rev/?page=*
+// @include        *.flickr.com/people/*/contacts/rev/
+// @include        *.flickr.com/people/*/contacts/friends/
+// @include        *.flickr.com/people/*/contacts/friends
+// @include        *.flickr.com/people/*/contacts/friends/?page=*
+// @include        *.flickr.com/people/*/contacts/family/?page=*
+// @include        *.flickr.com/people/*/contacts/family/
+// @include        *.flickr.com/people/*/contacts/family
+// @include        *.flickr.com/people/*/contacts/both/
+// @include        *.flickr.com/people/*/contacts/both
+// @include        *.flickr.com/people/*/contacts/both/?page=*
 // @grant          none
 // ==/UserScript==
 //
