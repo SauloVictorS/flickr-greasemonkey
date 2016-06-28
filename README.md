@@ -1,7 +1,7 @@
 Flickr Greasemonkey
 ===================
 
--Userscripts to enhance Flickr.
+Userscripts to enhance Flickr.
 
 Installation
 ------------
