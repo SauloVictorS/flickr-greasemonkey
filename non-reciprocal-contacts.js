@@ -16,6 +16,7 @@
 // @include        https://*.flickr.com/people/*/contacts/by-*/?page=*
 // @include        https://*.flickr.com/people/*/contacts/rev/?page=*
 // @include        https://*.flickr.com/people/*/contacts/rev/
+// @grant          none
 // ==/UserScript==
 //
 // Version 0.01 alpha
